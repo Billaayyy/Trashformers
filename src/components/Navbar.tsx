@@ -1,13 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Leaf } from "lucide-react";
+import Logo from "@/assets/logo1.png";
 
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <a href="/" className="flex items-center gap-2" aria-label="TRASHFORMERS home">
-          <Leaf className="text-primary" />
-          <span className="font-semibold tracking-wide">TRASHFORMERS</span>
+          <img src={Logo} alt="TRASHFORMERS logo" className="h-8 w-8" />
+          <span className="tracking-wide">
+            <span className="font-bold">TRASH</span>FORMERS
+          </span>
         </a>
         <nav aria-label="Primary" className="hidden md:flex items-center gap-6 text-sm">
           <a href="/#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
