@@ -37,7 +37,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>TRASHFORMERS — Green Campus Movement</title>
+        <title>TRASHFORMERS</title>
         <meta name="description" content="TRASHFORMERS: aksi kampus hijau. Edukasi lingkungan, gerakan bersih, dan kolaborasi komunitas." />
         {canonical && <link rel="canonical" href={canonical} />}
         <script type="application/ld+json">{JSON.stringify(orgJsonLd)}</script>
@@ -58,7 +58,7 @@ const Index = () => {
                   TRASHFORMERS
                 </h1>
                 <p className="mt-4 text-lg md:text-xl text-muted-foreground">
-                  Bergerak bersama untuk lingkungan kampus yang lebih bersih dan hijau.
+                  "Penggerak utama perubahan perilaku dan peningkatan kesadaran lingkungan melalui edukasi serta aksi pengelolaan sampah yang kolaboratif"
                 </p>
                 <div className="mt-8 flex items-center justify-center gap-3">
                   <a href="/#about"><Button variant="secondary" size="lg">Pelajari Lebih Lanjut</Button></a>

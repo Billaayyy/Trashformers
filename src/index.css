@@ -120,4 +120,7 @@ All colors MUST be HSL.
     background: radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), hsl(var(--brand)/0.22), transparent 60%);
     transition: opacity var(--transition-smooth);
   }
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, #000000 0%, #007250 100%);
+  }
 }
