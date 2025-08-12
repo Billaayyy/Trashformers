@@ -4,6 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Leaf, GraduationCap, Users2 } from "lucide-react";
 import EventCard from "@/components/EventCard";
 import { useEffect, useRef } from "react";
+import leoImg from "@/assets/image/leo.png";
+import adhaImg from "@/assets/image/adha.png";
+import billyImg from "@/assets/image/billy.png";
+import julyImg from "@/assets/image/july.png";
 
 const Index = () => {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -52,7 +56,7 @@ const Index = () => {
               <div className="mx-auto max-w-3xl text-center">
                 <div className="inline-flex items-center gap-2 rounded-full border bg-background px-3 py-1 text-sm text-muted-foreground shadow-sm">
                   <Leaf className="text-primary" />
-                  <span>Green Campus Initiative</span>
+                  <span>Social Community Supports</span>
                 </div>
                 <h1 className="mt-6 text-4xl md:text-6xl font-extrabold tracking-tight">
                   TRASHFORMERS
@@ -120,15 +124,15 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center">People Behind TRASHFORMERS</h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
             {[
-              { name: "Leo Kristianto", role: "Head of Division" },
-              { name: "Adha Fauziah", role: "Staff" },
-              { name: "Billy Chendana", role: "Staff" },
-              { name: "July Esther Florencia", role: "Staff" },
+              { name: "Leo Kristianto", role: "Head of Division", image: leoImg },
+              { name: "Adha Fauziah", role: "Staff", image: adhaImg },
+              { name: "Billy Chendana", role: "Staff", image: billyImg },
+              { name: "July Esther Florencia", role: "Staff", image: julyImg },
             ].map((p) => (
               <Card key={p.name} className="text-center transition-transform hover:-translate-y-0.5 hover:shadow-glow">
                 <CardContent className="pt-6">
                   <img
-                    src="/placeholder.svg"
+                    src={p.image}
                     alt={`${p.name} — TRASHFORMERS team portrait`}
                     loading="lazy"
                     className="mx-auto h-24 w-24 rounded-full border object-cover"
