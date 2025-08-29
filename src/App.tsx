@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import EventDetail from "./pages/events/EventDetail";
 import Register from "./pages/events/Register";
+import Education from "./pages/Education";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Navbar />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/education" element={<Education />} />
             <Route path="/events/:slug" element={<EventDetail />} />
             <Route path="/register/:slug" element={<Register />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

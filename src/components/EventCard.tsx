@@ -53,13 +53,13 @@ const EventCard = ({ slug, title, imageSrc, location, deadline, description }: E
                 </p>
               </div>
               <DialogFooter>
-                <Link to={`/register/${slug}`} aria-label={`Register for ${title}`}>
+                <Link to={slug === 'education' ? '/education' : `/register/${slug}`} aria-label={`Register for ${title}`}>
                   <Button variant="hero">Join</Button>
                 </Link>
               </DialogFooter>
             </DialogContent>
           </Dialog>
-          <Link to={`/register/${slug}`} aria-label={`Register for ${title}`}>
+          <Link to={slug === 'education' ? '/education' : `/register/${slug}`} aria-label={`Register for ${title}`}>
             <Button variant="hero">Join</Button>
           </Link>
         </div>
