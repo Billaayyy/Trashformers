@@ -20,5 +20,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // for GitHub Pages
-  base: "/Trashformers/",
 }));
