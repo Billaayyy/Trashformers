@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // for GitHub Pages
+  // for GitHub Pages did it work?
 }));
